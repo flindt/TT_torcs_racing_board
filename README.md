@@ -11,37 +11,24 @@ It is intended to be the easy solution when the router behaves oddly due to some
 
 Requirements
 ------------
-* A pc (or other) running linux
+* A pc (or other) running linux with APT
 
     You must have root access on this machine. 
-    Currently only "su" is supported (as oposed to "sudo")
     
-* An Asus RT_N16 + power supply
-
-    The state of the router is not important (at least I have not suceeded in bircking it yet)
-
-* a patch cable
 * internet access
 
 HowTo
 -----
-1. Get this code: `git clone https://github.com/moozer/TT_Asus_RT-N16_and_OpenWrt.git`
+1. Get this code: `git clone https://github.com/flindt/TT_torcs_racing_board.git`
 
-2. Run the script: `cd TT_Asus_RT-N16_and_OpenWrt` followed by `./runme.sh`
+2. Run the script: `cd TT_torcs_racing_board` followed by `./runme.sh`
 
 3. Follow what the script says
-
-4. Resetting to defaults: `telnet 192.168.1.1`, `mtd erase nvram` and finally `reboot`
 
 
 Resources used
 --------------
-* OpenWrt forum discussion: https://forum.openwrt.org/viewtopic.php?id=33560&p=3
-* Domething from DD-wrt: http://www.dd-wrt.com/wiki/index.php/Asus_RT-N16
-* Asus reflashing utility (from CD)
-* Creativity and some help using the serial connection
+* 
 
 
-Question?
----------
-send me an email bigmoozer@gmail.com
+
