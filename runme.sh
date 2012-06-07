@@ -8,7 +8,7 @@ sudo apt-get install cvs libalut-dev g++ libgl1-mesa-dev freeglut3-dev libplib-d
 #cvs -z3 -d:pserver:anonymous@torcs.cvs.sourceforge.net:/cvsroot/torcs co -r r1-3-1 -P torcs
 # Or if cvs is blocked by firewall 
 #wget http://sourceforge.net/projects/torcs/files/all-in-one/1.3.1/torcs-1.3.1.tar.bz2
-#tar xvf torcs-1.3.1.tar.bz2
+tar xvf torcs-1.3.1.tar.bz2
 
 # Get the server patch
 wget 'http://sourceforge.net/projects/cig/files/SCR Championship/Server Linux/1.0/scr-linux-patch.tgz'
@@ -20,9 +20,15 @@ cd scr-patch/
 ./do_patch.sh
 
 # Configure
+cd ../
+./configure
 
 # Make
+make
 
 # Install
+sudo make install
+sudo make datainstall
+
 
 
