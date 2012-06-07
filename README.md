@@ -1,5 +1,5 @@
-TT_Asus_RT-N16_and_OpenWrt
-==========================
+TT_torcs racing board
+=====================
 
 Technology template on how to make openwrt run on the Asus RT-N16 router
 
