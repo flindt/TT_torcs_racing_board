@@ -2,7 +2,7 @@
 
 
 # Get the prerequisites
-sudo apt-get install cvs libalut-dev g++ libgl1-mesa-dev freeglut3-dev libplib-dev libalut-dev libvorbis-dev libxmu-dev libxxf86vm-dev git libxi-dev
+sudo apt-get install cvs libalut-dev g++ libgl1-mesa-dev freeglut3-dev libplib-dev libalut-dev libvorbis-dev libxmu-dev libxxf86vm-dev git libxi-dev libxrender-dev libxrandr-dev libz-dev libpng-dev
 
 # Get the Torcs code version 1.3.1
 #cvs -z3 -d:pserver:anonymous@torcs.cvs.sourceforge.net:/cvsroot/torcs co -r r1-3-1 -P torcs
