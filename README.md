@@ -1,12 +1,11 @@
 TT_torcs racing board
 =====================
 
-Technology template on how to make openwrt run on the Asus RT-N16 router
+Technology template on how compile the Torcs Racing Board Server 
 
 Purpose
 -------
-This TT provides an easy way of flashing or reflashing the router.
-It is intended to be the easy solution when the router behaves oddly due to some configuration issue.
+This TT provides an easy way compiling the TRB server on a linux platform.
 
 
 Requirements
@@ -26,9 +25,7 @@ HowTo
 3. Follow what the script says
 
 
-Resources used
---------------
-* 
+
 
 
 
