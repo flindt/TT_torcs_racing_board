@@ -14,7 +14,10 @@ fi
 tar xvf torcs-1.3.1.tar.bz2
 
 # Get the server patch
-wget 'http://sourceforge.net/projects/cig/files/SCR Championship/Server Linux/1.0/scr-linux-patch.tgz'
+if [ ! -f  scr-linux-patch.tgz ]
+then
+	wget 'http://sourceforge.net/projects/cig/files/SCR Championship/Server Linux/1.0/scr-linux-patch.tgz'
+fi
 
 # Patch the code
 cd torcs-1.3.1/
