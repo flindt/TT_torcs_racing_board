@@ -11,7 +11,7 @@ if [ ! -f  torcs-1.3.1.tar.bz2 ]
 then
 	wget http://sourceforge.net/projects/torcs/files/all-in-one/1.3.1/torcs-1.3.1.tar.bz2
 fi
-tar xvf torcs-1.3.1.tar.bz2
+
 
 # Get the server patch
 if [ ! -f  scr-linux-patch.tgz ]
@@ -19,11 +19,16 @@ then
 	wget 'http://sourceforge.net/projects/cig/files/SCR Championship/Server Linux/1.0/scr-linux-patch.tgz'
 fi
 
-# Patch the code
-cd torcs-1.3.1/
-tar xvf ../scr-linux-patch.tgz
-cd scr-patch/
-./do_patch.sh
+# unpack and Patch the code
+# unless it is already there
+if [ ! -d torcs-1.3.1 ]
+then
+	tar xvf torcs-1.3.1.tar.bz2
+	cd torcs-1.3.1/	
+	tar xvf ../scr-linux-patch.tgz
+	cd scr-patch/
+	./do_patch.sh
+fi
 
 # Configure
 cd ../
